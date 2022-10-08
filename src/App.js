@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 
 //загрузка страница корзины только при необходимости (динамические импорты)
+
 const News = React.lazy(() => import(/* webpackChunkName: 'News'*/ './pages/News'));
 const Profile = React.lazy(() => import(/* webpackChunkName: 'Profile'*/ './pages/Profile'));
 const Auth = React.lazy(() =>
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Header user={user} setUser={setUser}/>
+      <Header user={user} setUser={setUser} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

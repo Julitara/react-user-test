@@ -3,9 +3,10 @@
 @import './news';
 @import './authPopup';
 @import './profile';
+@import './home';
 
 #root {
-  background-color:#f0f0f0;
+  background-color: #f0f0f0;
 }
 
 html {
@@ -32,98 +33,3 @@ body {
   font-family: 'OpenSans', sans-serif;
   font-weight: 400;
 }
-
-/*home*/
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.home {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  &__title {
-    margin: 0;
-    margin-bottom: 40px;
-    font-weight: 900;
-    font-size: 30px;
-  }
-
-  &__article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media (max-width: 700px) {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-    
-    
-
-    img {
-      margin-bottom: 10px;
-    }
-  
-    h3 {
-      margin: 0;
-      margin-bottom: 20px;
-    }
-  
-    h4 {
-      margin: 0;
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-  
-    img {
-      margin-bottom: 10px;
-      width: 350px;
-      height: 230px;
-    }
-  
-    article {
-      max-width: 45%;
-      border-radius: 10px;
-      background-color: #e6e3d8;
-      padding: 20px 20px;
-      border: 1px solid #cacaca;
-      p {
-        margin: 0;
-        margin-bottom: 20px;
-      }
-      @media (max-width: 700px) {
-        max-width: 80%;
-        margin-right: 0;
-        text-align: center;
-      }
-     
-    }
-  
-    &_car {
-      margin-right: 40px;
-      margin-bottom: 20px;
-    }
-  
-    &_fashion {
-      margin-right: 40px;
-      @media (max-width: 700px) {
-        margin-bottom: 20px;
-      }
-    }
-  
-    &_sports {
-      margin-bottom: 20px;
-    }
-  
-  }
-}
-
-
-
-
-
-

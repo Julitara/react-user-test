@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import img_car from '../assets/img/news-1.jpg';
 import img_sport from '../assets/img/news-2.jpg';
 import img_fashion from '../assets/img/news-3.jpg';
